@@ -7,25 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA1670FD15AB37A000E4787E /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1670FC15AB37A000E4787E /* QuartzCore.framework */; };
 		FAC7C8F615AA3FFD00D5AB6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC7C8F515AA3FFD00D5AB6F /* UIKit.framework */; };
 		FAC7C8F815AA3FFD00D5AB6F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC7C8F715AA3FFD00D5AB6F /* Foundation.framework */; };
 		FAC7C8FA15AA3FFD00D5AB6F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAC7C8F915AA3FFD00D5AB6F /* CoreGraphics.framework */; };
 		FAC7C90015AA3FFD00D5AB6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAC7C8FE15AA3FFD00D5AB6F /* InfoPlist.strings */; };
 		FAC7C90215AA3FFD00D5AB6F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C90115AA3FFD00D5AB6F /* main.m */; };
 		FAC7C90615AA3FFD00D5AB6F /* ANAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C90515AA3FFD00D5AB6F /* ANAppDelegate.m */; };
+		FAC7C90E15AA400800D5AB6F /* ANProgressBar.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC7C90D15AA400800D5AB6F /* ANProgressBar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA1670FC15AB37A000E4787E /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		FAC7C8F115AA3FFD00D5AB6F /* PBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC7C8F515AA3FFD00D5AB6F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		FAC7C8F715AA3FFD00D5AB6F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		FAC7C8F915AA3FFD00D5AB6F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		FAC7C8FD15AA3FFD00D5AB6F /* PBar-Info.plist */ = {isa = PBXFileReference; path = "PBar-Info.plist"; sourceTree = "<group>"; };
+		FAC7C8FD15AA3FFD00D5AB6F /* PBar-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PBar-Info.plist"; sourceTree = "<group>"; };
 		FAC7C8FF15AA3FFD00D5AB6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAC7C90115AA3FFD00D5AB6F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		FAC7C90315AA3FFD00D5AB6F /* PBar-Prefix.pch */ = {isa = PBXFileReference; path = "PBar-Prefix.pch"; sourceTree = "<group>"; };
-		FAC7C90415AA3FFD00D5AB6F /* ANAppDelegate.h */ = {isa = PBXFileReference; path = ANAppDelegate.h; sourceTree = "<group>"; };
+		FAC7C90315AA3FFD00D5AB6F /* PBar-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PBar-Prefix.pch"; sourceTree = "<group>"; };
+		FAC7C90415AA3FFD00D5AB6F /* ANAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ANAppDelegate.h; sourceTree = "<group>"; };
 		FAC7C90515AA3FFD00D5AB6F /* ANAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ANAppDelegate.m; sourceTree = "<group>"; };
+		FAC7C90C15AA400800D5AB6F /* ANProgressBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANProgressBar.h; sourceTree = "<group>"; };
+		FAC7C90D15AA400800D5AB6F /* ANProgressBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANProgressBar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA1670FD15AB37A000E4787E /* QuartzCore.framework in Frameworks */,
 				FAC7C8F615AA3FFD00D5AB6F /* UIKit.framework in Frameworks */,
 				FAC7C8F815AA3FFD00D5AB6F /* Foundation.framework in Frameworks */,
 				FAC7C8FA15AA3FFD00D5AB6F /* CoreGraphics.framework in Frameworks */,
@@ -62,6 +68,7 @@
 		FAC7C8F415AA3FFD00D5AB6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA1670FC15AB37A000E4787E /* QuartzCore.framework */,
 				FAC7C8F515AA3FFD00D5AB6F /* UIKit.framework */,
 				FAC7C8F715AA3FFD00D5AB6F /* Foundation.framework */,
 				FAC7C8F915AA3FFD00D5AB6F /* CoreGraphics.framework */,
@@ -75,6 +82,8 @@
 				FAC7C90415AA3FFD00D5AB6F /* ANAppDelegate.h */,
 				FAC7C90515AA3FFD00D5AB6F /* ANAppDelegate.m */,
 				FAC7C8FC15AA3FFD00D5AB6F /* Supporting Files */,
+				FAC7C90C15AA400800D5AB6F /* ANProgressBar.h */,
+				FAC7C90D15AA400800D5AB6F /* ANProgressBar.m */,
 			);
 			path = PBar;
 			sourceTree = "<group>";
@@ -154,6 +163,7 @@
 			files = (
 				FAC7C90215AA3FFD00D5AB6F /* main.m in Sources */,
 				FAC7C90615AA3FFD00D5AB6F /* ANAppDelegate.m in Sources */,
+				FAC7C90E15AA400800D5AB6F /* ANProgressBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,6 +267,7 @@
 				FAC7C90B15AA3FFD00D5AB6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

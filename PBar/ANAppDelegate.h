@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ANProgressBar.h"
 
-@interface ANAppDelegate : UIResponder <UIApplicationDelegate>
+@interface ANAppDelegate : UIResponder <UIApplicationDelegate> {
+    ANProgressBar * progress;
+    UISlider * slider;
+}
 
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) UIWindow * window;
+
+- (void)sliderChanged:(id)sender;
 
 @end

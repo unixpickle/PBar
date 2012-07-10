@@ -12,13 +12,28 @@
 
 @synthesize window = _window;
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    progress = [[ANProgressBar alloc] initWithFrame:CGRectMake(10, 90, 300, kANProgressBarHeight)];
+    [self.window addSubview:progress];
+    [progress setState:ANProgressBarStateIndeterminate];
+    [progress setDoubleValue:0.5]; //0.99662155
+    [progress startAnimation:self];
+    
+    slider = [[UISlider alloc] initWithFrame:CGRectMake(10, 130, 300, 32)];
+    [slider addTarget:self action:@selector(sliderChanged:) forControlEvents:UIControlEventValueChanged];
+    [slider setContinuous:YES];
+    [self.window addSubview:slider];
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
+}
+
+- (void)sliderChanged:(id)sender {
+    if (progress.state != ANProgressBarStateValue) progress.state = ANProgressBarStateValue;
+    [progress setDoubleValue:(double)[slider value]];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
